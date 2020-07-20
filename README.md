@@ -1,2 +1,2 @@
-OctaGo
+OctaGo - http://octago.surge.sh/
 
