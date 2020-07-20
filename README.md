@@ -51,7 +51,7 @@ One core feature is a geolocation tracker that allows staff to see when attendee
 
 #### Wireframes
 
-![Database Design](./docs/Screen Shot 2020-07-20 at 3.22.01 PM.png)
+![Database Design](./docs/Databasedesign.png)
 
 #### Component Hierarchy
 
@@ -62,7 +62,6 @@ One core feature is a geolocation tracker that allows staff to see when attendee
 ### MVP Server (Back End)
 
 #### ERD Model
-![ERD Model](./docs/Screen Shot 2020-07-20 at 3.22.01 PM.png)
 
 #### Endpoints
 
