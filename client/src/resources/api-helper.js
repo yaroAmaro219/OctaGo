@@ -1,7 +1,5 @@
 import axios from 'axios'
 
-const axios = require('axios')
-
 const baseUrl = process.env.NODE_ENV ===
   'production' ? 'http://octago.surge.sh/' :
   'http://localhost:3000'

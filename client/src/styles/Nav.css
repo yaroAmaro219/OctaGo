@@ -1,0 +1,27 @@
+.nav  {
+  display: flex;
+  margin-right: auto;
+  padding: 27px;
+  position: fixed;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  padding: 9px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  
+  
+}
+
+.nav-link {
+  color: white;
+}
