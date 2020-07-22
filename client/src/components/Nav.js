@@ -14,12 +14,9 @@ export default class Nav extends Component {
     console.log({currentUser})
     return (
       <div class="nav">
-        <h1 class="profile-welcome">Hello {this.props.currentUser
-          &&
-        this.props.currentUser.email}</h1>
         < a href="javascript:void(0);" class="icon"
           onClick={() => { this.setState({ toggle: !this.state.toggle})}}>
-          <i class="fa fa-bars"></i>
+          <i class="fa fa-bars" id="bar"></i>
           <div class="nav-items">
           {this.state.toggle
             ?
@@ -28,7 +25,7 @@ export default class Nav extends Component {
               <Link to="/events" class="nav-link">Events</Link>
               {this.props.currentUser
                 ?
-                <Link to="/logout" class="nav-link">Logout</Link>
+                <button class="nav-link" onClick={this.props.handleLogout}>Logout</button>
                 :
                 <Link to="/login" class="nav-link">Login</Link>
           }
@@ -38,6 +35,11 @@ export default class Nav extends Component {
             }
             </div>
           </a>
+       
+        {/* <h1 class="profile-welcome">Hello {this.props.currentUser
+          &&
+        this.props.currentUser.email}</h1> */}
+        
       </div>
     )
   }

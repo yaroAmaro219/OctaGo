@@ -665,3 +665,2328 @@ Processing by AuthenticationController#verify as HTML
 Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
 
 
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:46:13 -0400
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 53ms (Views: 4.8ms | ActiveRecord: 3.7ms | Allocations: 7402)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:46:38 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:46:52 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 894)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:48:53 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 895)
+
+
+Started POST "/auth/login" for ::1 at 2020-07-22 08:49:12 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"auth"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 245ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 1214)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:49:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:50:42 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started POST "/auth/login" for ::1 at 2020-07-22 08:51:23 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"auth"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 207ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 1026)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:51:59 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:52:01 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:52:03 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:52:57 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:53:00 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 08:53:17 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:21:11 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 29ms (Views: 1.6ms | ActiveRecord: 1.1ms | Allocations: 7402)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:21:35 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:21:45 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:21:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 894)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:21:52 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 894)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:21:54 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 28ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:22:00 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:24:13 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 878)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:24:31 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:24:35 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (1.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 2.4ms | Allocations: 6040)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:24:42 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:25:00 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:25:03 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:25:05 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:25:15 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:25:43 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:25:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:25:49 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:29:01 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:29:14 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:29:38 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:29:38 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 965)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:30:07 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.7ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:30:07 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:30:17 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:30:17 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 965)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:30:24 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:30:24 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 965)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:30:27 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:30:27 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:30:46 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:30:46 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:32:47 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:32:47 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:34:49 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:34:49 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:37:29 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:37:29 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:37:34 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:37:34 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:37:36 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:37:36 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:37:40 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:37:40 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:37:49 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:37:49 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:37:53 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:37:53 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:37:54 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:37:54 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:37:57 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:37:57 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:38:17 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 58ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 880)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:38:17 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:38:19 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:38:19 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:38:22 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:38:22 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:38:23 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:38:23 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:38:25 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:38:25 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:38:31 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:38:31 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:38:34 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:38:34 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:38:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:38:37 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:38:41 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:38:41 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:38:43 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:38:43 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:38:46 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:38:46 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:39:33 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:39:33 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:39:43 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:39:43 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:39:45 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:39:45 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:39:47 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:39:47 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:39:49 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:39:49 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:40:10 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:40:10 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:40:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:40:30 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:40:42 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:40:42 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:40:46 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:40:46 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:41:01 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:41:01 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:41:08 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:41:08 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:41:10 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:41:10 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:41:15 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:41:15 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:41:19 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:41:19 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:41:27 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 880)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:41:27 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:41:39 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:41:39 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:41:59 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:42:34 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:42:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:43:11 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:43:11 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:43:32 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 25ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:43:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 40ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:43:48 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:43:52 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 70ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:44:27 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:44:54 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:44:57 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:45:02 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:45:05 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:45:05 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:50:01 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 15ms (Views: 3.2ms | ActiveRecord: 0.8ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:50:01 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:50:24 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:50:24 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:50:34 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:50:34 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:52:25 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:52:25 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started POST "/auth/login" for ::1 at 2020-07-22 09:54:30 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"auth"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 235ms (Views: 0.4ms | ActiveRecord: 3.4ms | Allocations: 1214)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:58:07 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:58:08 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started POST "/users/" for ::1 at 2020-07-22 09:58:53 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"art@art.com", "password"=>"[FILTERED]", "admin"=>false}}
+[31mUnpermitted parameters: :name, :admin[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "art@art.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 254ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 7516)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:59:39 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:59:39 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:59:49 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:59:49 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:59:52 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:59:52 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 09:59:58 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 09:59:58 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:00:06 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:00:06 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started POST "/users/" for ::1 at 2020-07-22 10:00:28 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "phone"=>"3474006623", "email"=>"art@art.com", "password"=>"[FILTERED]", "admin"=>false}}
+[31mUnpermitted parameters: :name, :admin[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "3474006623"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "art@art.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("phone", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["phone", "3474006623"], ["email", "art@art.com"], ["password_digest", "$2a$12$8d7EUOt7i7CV70Q0QpgLVOsfLCWRSDTUXWoQSe1zHh0PKFRwcwFwy"], ["created_at", "2020-07-22 14:00:28.717885"], ["updated_at", "2020-07-22 14:00:28.717885"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 500 Internal Server Error in 271ms (ActiveRecord: 3.7ms | Allocations: 6245)
+
+
+  
+NoMethodError (undefined method `username' for #<User:0x00007fc84ac36be8>):
+  
+app/controllers/users_controller.rb:22:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:01:08 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 907)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:01:08 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 974)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:01:10 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:01:10 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:01:13 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:01:13 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:01:15 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:01:15 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started POST "/users/" for ::1 at 2020-07-22 10:01:31 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"phone"=>"3474006623", "email"=>"art@art.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "3474006623"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "art@art.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 280ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 4627)
+
+
+Started POST "/users/" for ::1 at 2020-07-22 10:02:36 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"phone"=>"3474006623", "email"=>"fart@art.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "3474006623"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fart@art.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 210ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 4177)
+
+
+Started POST "/auth/login" for ::1 at 2020-07-22 10:06:20 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"auth"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 319ms (Views: 0.7ms | ActiveRecord: 0.6ms | Allocations: 1028)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:07:56 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:07:57 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:08:13 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:08:13 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:10:01 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 2.0ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:10:01 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:10:02 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:10:02 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:10:08 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:10:08 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:10:32 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 33ms (Views: 7.7ms | ActiveRecord: 1.5ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:10:32 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:11:35 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:11:35 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:12:10 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:12:10 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:12:18 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:12:18 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:12:23 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.5ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:12:23 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:12:25 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:12:25 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:12:31 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 878)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:12:31 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:12:34 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:12:34 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:12:41 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:12:41 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:12:47 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:12:47 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:12:56 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:12:56 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:13:19 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:13:19 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:13:22 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:13:22 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:14:10 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:14:11 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:14:11 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:14:11 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:14:18 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:14:18 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:14:25 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:14:25 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:15:02 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 4.3ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:15:02 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.3ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:15:05 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:15:05 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 49ms (Views: 49.1ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:15:08 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 47ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:15:08 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:15:11 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 50ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:15:11 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:15:14 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:15:14 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:16:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:16:48 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:56:37 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 18ms (Views: 7.2ms | ActiveRecord: 0.6ms | Allocations: 897)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:56:37 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 984)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:56:53 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:56:53 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:58:15 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:58:15 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:58:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:58:37 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 10:58:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 877)
+
+
+Started GET "/events" for ::1 at 2020-07-22 10:58:48 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 56ms (Views: 55.8ms | ActiveRecord: 0.2ms | Allocations: 966)
+
+
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:06:25 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 11ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 897)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:06:25 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 984)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:06:25 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 135)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started POST "/events" for ::1 at 2020-07-22 11:06:49 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started POST "/auth/login" for ::1 at 2020-07-22 11:07:04 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"auth"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 233ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 1042)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:07:05 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:31:46 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 23ms (Views: 5.9ms | ActiveRecord: 0.9ms | Allocations: 897)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:31:46 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 984)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:31:46 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:31:47 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:31:47 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:31:47 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:31:59 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:31:59 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:31:59 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:32:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:32:30 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:32:30 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:40:17 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 11ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 897)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:40:17 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 984)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:40:17 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:41:38 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:41:38 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:41:38 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:41:59 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:41:59 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:41:59 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:42:05 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:42:05 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:42:05 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:42:09 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:42:09 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:42:09 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:42:21 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:42:21 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:42:21 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:42:49 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:42:49 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:42:49 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:42:51 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:42:51 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:42:51 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:42:57 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:42:57 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:42:57 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:43:00 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:43:00 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:43:00 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:43:13 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:43:13 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:43:13 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started GET "/auth/verify" for ::1 at 2020-07-22 11:43:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/events" for ::1 at 2020-07-22 11:43:26 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started POST "/events" for ::1 at 2020-07-22 11:43:26 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started POST "/users/" for ::1 at 2020-07-22 13:00:22 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"phone"=>"3474006623", "email"=>"art@art.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "3474006623"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "art@art.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 237ms (Views: 1.0ms | ActiveRecord: 0.7ms | Allocations: 4496)
+
+
+Started POST "/users/" for ::1 at 2020-07-22 13:02:12 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"phone"=>"3474006623", "email"=>"art@art.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "3474006623"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "art@art.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 242ms (Views: 0.2ms | ActiveRecord: 4.9ms | Allocations: 9732)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "admins"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "phone" varchar, "email" varchar, "password_digest" varchar, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar, "date" datetime, "location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_events_on_user_id" ON "events" ("user_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "phone" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "admin" boolean)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "admins"[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "phone" varchar, "email" varchar, "password_digest" varchar, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar, "date" datetime, "location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX "index_events_on_user_id" ON "events" ("user_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "phone" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "admin" boolean)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "development"], ["updated_at", "2020-07-22 17:02:55.758993"], ["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-07-22 17:02:55.763639"], ["key", "environment"]]
+  [1m[35m (28.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "1234567890"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("phone", "email", "password_digest", "created_at", "updated_at", "admin") VALUES (?, ?, ?, ?, ?, ?)[0m  [["phone", "1234567890"], ["email", "admin@email.com"], ["password_digest", "$2a$12$fn0BJsAniuhMyig2GXLS5uwMBXPjjlWAopsttszh7de3yvd36cN7C"], ["created_at", "2020-07-22 17:02:56.038196"], ["updated_at", "2020-07-22 17:02:56.038196"], ["admin", 1]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "0987654321"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("phone", "email", "password_digest", "created_at", "updated_at", "admin") VALUES (?, ?, ?, ?, ?, ?)[0m  [["phone", "0987654321"], ["email", "user@email.com"], ["password_digest", "$2a$12$BO0arH1nNpv3Cji/FPZWMeAIxxfQ28SDUddLjEkSVgu/BLtqRv55C"], ["created_at", "2020-07-22 17:02:56.259536"], ["updated_at", "2020-07-22 17:02:56.259536"], ["admin", 0]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "movies"], ["created_at", "2020-07-22 17:02:56.269054"], ["updated_at", "2020-07-22 17:02:56.269054"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "events"[0m
+Started POST "/users/" for ::1 at 2020-07-22 13:05:27 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"phone"=>"3474006624", "email"=>"hi@hi.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "3474006624"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hi@hi.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("phone", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["phone", "3474006624"], ["email", "hi@hi.com"], ["password_digest", "$2a$12$P66WUNtn/42SMZqyFsIvt.9aoJcwy3VEuvPno8xVZe8/WUWBNwaAa"], ["created_at", "2020-07-22 17:05:27.896064"], ["updated_at", "2020-07-22 17:05:27.896064"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 201 Created in 253ms (Views: 0.8ms | ActiveRecord: 3.3ms | Allocations: 10925)
+
+
+Started POST "/auth/login" for ::1 at 2020-07-22 13:05:55 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"auth"=>{"email"=>"hi@hi.com", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"email"=>"hi@hi.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hi@hi.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 218ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 1296)
+
+
+Started POST "/events" for ::1 at 2020-07-22 13:05:55 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.4ms | Allocations: 167)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
+Started POST "/users/" for ::1 at 2020-07-22 13:06:48 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"phone"=>"3474006625", "email"=>"why@why.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "3474006625"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "why@why.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("phone", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["phone", "3474006625"], ["email", "why@why.com"], ["password_digest", "$2a$12$t/SQMkMjLnlFYcXM35ldPefLgcpYlVXSUtOthqVI6vyOmGSRo9vai"], ["created_at", "2020-07-22 17:06:48.538767"], ["updated_at", "2020-07-22 17:06:48.538767"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 201 Created in 218ms (Views: 0.6ms | ActiveRecord: 1.8ms | Allocations: 4933)
+
+
+Started POST "/users/" for ::1 at 2020-07-22 13:07:17 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"phone"=>"3474006625", "email"=>"why@why.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "3474006625"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "why@why.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 216ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 5632)
+
+
+Started POST "/users/" for ::1 at 2020-07-22 13:07:30 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"phone"=>"3474006626", "email"=>"wh@wh.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "3474006626"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wh@wh.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("phone", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["phone", "3474006626"], ["email", "wh@wh.com"], ["password_digest", "$2a$12$zftriodynNNPRB91e/xiae4e3lgzKN4YWd9ETvjwobuIVCQruJ1Ha"], ["created_at", "2020-07-22 17:07:31.196596"], ["updated_at", "2020-07-22 17:07:31.196596"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 201 Created in 233ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 4875)
+
+
+Started POST "/events" for ::1 at 2020-07-22 13:07:39 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"event"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 132)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:49:in `event_params'
+app/controllers/events_controller.rb:18:in `create'
