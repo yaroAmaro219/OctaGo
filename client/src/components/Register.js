@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from './Footer'
 import { withRouter } from 'react-router-dom'
 
 
@@ -7,7 +6,7 @@ const Register = (props) => {
   const { handleRegister, registerFormData, handleChange } = props
   return (
     <>
-      <div className='register-main-container'>
+      {/* <div className='register-main-container'>
         <div className='register-left-container'>
           <div class='register-left-co-container'>
             <div class="register-title-container">
@@ -43,8 +42,8 @@ const Register = (props) => {
           <button className='register-submit-button'>Register</button>
 
         </form>
-      </div>
-      <Footer />
+      </div> */}
+ 
     </>
   )
 }

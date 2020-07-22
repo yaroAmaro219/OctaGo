@@ -9,4 +9,6 @@ User.destroy_all
 
 @user = User.create(phone: "1234567890", email: "admin@email.com", password: "123456", admin: "true")
 @user = User.create(phone: "0987654321", email: "user@email.com", password: "123456", admin: "false")
+@event = Event.create(title: "movies")
 p "#{User.count} user(s) created"
+p "#{Event.count} event(s) created"

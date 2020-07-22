@@ -75,6 +75,3 @@ export const removeToken = () => {
   api.defaults.headers.common.authorization = null;
 }
 
-export const removeItem = () => {
-
-}

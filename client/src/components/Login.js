@@ -1,14 +1,14 @@
 import React from 'react'
 
 const Login = (props) => {
-  const { handleLogin, authFormData, handleChange } = props
+  const { handleLogin, authFormData, authHandleChange } = props
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={handleLogin}>
         <h1 className="sign-in-title">Sign In</h1>
         <div className="input-container">
-          <input name="email" onChange={handleChange} value={authFormData} className="input" placeholder="Email"/>
-          <input name="email" onChange={handleChange} value={authFormData} className="input" placeholder="Password"/>
+          <input name="email" type="text" onChange={authHandleChange} value={authFormData.email} className="input" placeholder="Email"/>
+          <input name="password" type="password" onChange={authHandleChange} value={authFormData.password} className="input" placeholder="Password"/>
         </div>
         <button className='submit-button'> Login</button>
       </form>
