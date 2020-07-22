@@ -13,34 +13,30 @@ export default class Nav extends Component {
     const {currentUser} = this.props
     console.log({currentUser})
     return (
-      <div class="nav">
-        < a href="javascript:void(0);" class="icon"
-          onClick={() => { this.setState({ toggle: !this.state.toggle})}}>
-          <i class="fa fa-bars" id="bar"></i>
-          <div class="nav-items">
-          {this.state.toggle
-            ?
-            <div class="links">
-              <Link to="/" class="nav-link">Home</Link>
-              <Link to="/events" class="nav-link">Events</Link>
-              {this.props.currentUser
+      <div class="page">
+      <div class="hamburger">
+        <input type="checkbox" id="nav-toggle"/>
+          <label for="nav-toggle">
+            <span class="toggle-words"><i class="fa fa-bars" id="bar"></i></span>
+          </label>
+      <div class="menu">
+        <ul>
+            <li><Link to="/" class="nav-link">Home</Link></li>
+            <li><Link to="/events" class="nav-link" >Events</Link></li>
+              <li><Link to="/profile" class="nav-link">Profile</Link></li>
+              <li>
+                {
+                  this.props.currentUser
                 ?
                 <button class="nav-link" onClick={this.props.handleLogout}>Logout</button>
                 :
                 <Link to="/login" class="nav-link">Login</Link>
-          }
-            </div>
-            :
-            null
-            }
-            </div>
-          </a>
-       
-        {/* <h1 class="profile-welcome">Hello {this.props.currentUser
-          &&
-        this.props.currentUser.email}</h1> */}
-        
+                }
+              </li>
+        </ul>
       </div>
+      </div>
+      </div> 
     )
   }
 }

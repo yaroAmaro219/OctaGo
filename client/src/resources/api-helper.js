@@ -13,42 +13,42 @@ export const showUser = async () => {
   return resp.data
 }
 
-export const showEvent = async () => {
-  const resp = await api.get(`/events`)
-  return resp.data
-}
-
 export const showUserItem = async (id) => {
   const resp = await api(`/users/${id}`)
   return resp.data
 }
 
-// ============ POST ============
+// ============ Events ============
+
+export const showEvent = async () => {
+  const resp = await api.get(`/events`)
+  return resp.data
+}
 
 export const postEvent = async (id, postData) => {
   const resp = await api.post(`/events`, { post: postData })
   return resp.data
 }
 
-export const showPost = async () => {
-  const resp = await api.get(`/posts`)
-  return resp.data
-}
+// export const showPost = async () => {
+//   const resp = await api.get(`/posts`)
+//   return resp.data
+// }
 
-export const showPersonalPost = async (id) => {
-  const resp = await api.get(`/profile/${id}`)
-  return resp.data
-}
+// export const showPersonalPost = async (id) => {
+//   const resp = await api.get(`/profile/${id}`)
+//   return resp.data
+// }
 
-export const putPost = async (id, postData) => {
-  const resp = await api.put(`/users/:id/posts/${id}`, { post: postData })
-  return resp.data
-}
+// export const putPost = async (id, postData) => {
+//   const resp = await api.put(`/users/:id/posts/${id}`, { post: postData })
+//   return resp.data
+// }
 
-export const destroyPost = async (id) => {
-  const resp = await api.delete(`/users/:id/posts/${id}`)
-  return resp.data
-}
+// export const destroyPost = async (id) => {
+//   const resp = await api.delete(`/users/:id/posts/${id}`)
+//   return resp.data
+// }
 
 //========== AUTH ===================
 
