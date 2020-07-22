@@ -3,18 +3,20 @@ import { Route, Switch, withRouter } from 'react-router'
 import Login from './components/Login'
 import Nav from './components/Nav'
 import Events from './components/Events'
-import { verifyUser, registerUser, removeToken } from './resources/api-helper'
-
+import Register from './components/Register'
 import {
-  loginUser
+  loginUser,
+  verifyUser,
+  registerUser,
+  removeToken
 } from './resources/api-helper'
 
-export default class Container extends Component {
+ class Container extends Component {
   constructor() {
     super() 
     this.state = {
       currentUser: null,
-      registerForm: {
+      registerFormData: {
         name: '',
         email: '',
         password: '',
@@ -40,7 +42,7 @@ export default class Container extends Component {
     this.setState({
       currentUser
     })
-    this.props.history.push('/home')
+    this.props.history.push('/events')
   }
 
   handleRegister = async (e) => {
@@ -93,18 +95,28 @@ export default class Container extends Component {
          <Nav
           handleLogin={this.handleLogin}
           handleLogout={this.handleLogout}
-          user={this.state.user}
+          currentUser={this.state.currentUser}
         />
-        <h1>Octago</h1>
+        <h1>OctaGo</h1>
        
        
         <Switch>
           <Route exact path="/login" render={(props) => (
             <Login
+            handleLogin={this.handleLogin}
+          handleLogout={this.handleLogout}
+              user={this.state.currentUser}
+              authFormData={this.state.authFormData}
+              authHandleChange={this.authHandleChange}
+            handleChange={this.handleChange}
             {...props}/>
         )}/>
         <Route exact path="/events" render={(props) => (
             <Events
+            {...props}/>
+        )}/>
+        <Route exact path="/register" render={(props) => (
+            <Register
             {...props}/>
         )}/>
            
@@ -113,4 +125,6 @@ export default class Container extends Component {
      
     )
   }
-}
+ }
+
+ export default withRouter(Container)
