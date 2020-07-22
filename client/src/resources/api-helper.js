@@ -13,6 +13,11 @@ export const showUser = async () => {
   return resp.data
 }
 
+export const showEvent = async () => {
+  const resp = await api.get(`/events`)
+  return resp.data
+}
+
 export const showUserItem = async (id) => {
   const resp = await api(`/users/${id}`)
   return resp.data
@@ -20,8 +25,8 @@ export const showUserItem = async (id) => {
 
 // ============ POST ============
 
-export const postPost = async (id, postData) => {
-  const resp = await api.post(`/users/${id}/posts`, { post: postData })
+export const postEvent = async (id, postData) => {
+  const resp = await api.post(`/events`, { post: postData })
   return resp.data
 }
 

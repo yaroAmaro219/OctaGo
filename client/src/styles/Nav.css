@@ -13,6 +13,11 @@
   padding: 9px;
 }
 
+#bar {
+  position: static;
+
+}
+
 a {
   text-decoration: none;
 }
@@ -24,4 +29,6 @@ a {
 
 .nav-link {
   color: white;
+  background-color: black;
+  border: none;
 }

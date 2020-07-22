@@ -8,7 +8,9 @@ import {
   loginUser,
   verifyUser,
   registerUser,
-  removeToken
+  removeToken,
+  showEvent,
+  postEvent
 } from './resources/api-helper'
 
  class Container extends Component {
@@ -17,15 +19,21 @@ import {
     this.state = {
       currentUser: null,
       registerFormData: {
-        name: '',
+        phone: '',
         email: '',
         password: '',
-        admin: false
       },
       authFormData: {
         email: '',
         password: ''
       },
+      event: '',
+      newEvent: {
+        user: '',
+        title: '',
+        date: '',
+        location: ''
+      }
       }
   }
   
@@ -34,6 +42,7 @@ import {
     if (currentUser) {
       this.setState({ currentUser })
     }
+    this.getEvent()
   }
 
   handleLogin = async (e) => {
@@ -51,6 +60,7 @@ import {
     this.setState({
       currentUser
     })
+    this.props.history.push("/events")
   }
 
   handleLogout = () => {
@@ -87,15 +97,38 @@ import {
       [e.target.name]: value
     })
   }
+   
+  getEvent = async () => {
+    const event = await showEvent();
+    if (event) {
+      this.setState({ event})
+    }
+  }
+   
+  addEvent = async () => {
+    const newEvent = await postEvent({
+      user: '',
+      title: '',
+      date: '',
+      location: ''
+    })
+    this.setState(prevState => ({
+      user: newEvent,
+      title: "",
+      date: "",
+      location: "",
+    }))
+  }
   
   render() {
-    console.log('hello')
+    console.log('event', this.state.event)
     return (
       <div>
          <Nav
           handleLogin={this.handleLogin}
           handleLogout={this.handleLogout}
           currentUser={this.state.currentUser}
+
         />
         <h1>OctaGo</h1>
        
@@ -113,10 +146,17 @@ import {
         )}/>
         <Route exact path="/events" render={(props) => (
             <Events
+              getEvent={this.getEvent}
+              event={this.state.event}
+              currentUser={this.state.currentUser}
+            addEvent={this.addEvent}
             {...props}/>
         )}/>
         <Route exact path="/register" render={(props) => (
             <Register
+              handleRegister={this.handleRegister}
+              handleChange={this.registerHandleChange}
+            registerFormData={this.state.registerFormData}
             {...props}/>
         )}/>
            
