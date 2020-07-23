@@ -11,7 +11,11 @@ Event.destroy_all
 @user = User.create(phone: "1234567890", email: "admin@email.com", password: "123456", admin: "true")
 @user = User.create(phone: "0987654321", email: "user@email.com", password: "123456", admin: "false")
 
+<<<<<<< HEAD
 @event = Event.create(title: "SuperBowl Half-Time Party by MasterCard", date: "February 8th 2021", location: "Gillette Stadium, Boston MA ")
+=======
+@event = Event.create(title: "SuperBowl Half-Time Party by MasterCard", date: "February 8th 2021", location: "Gillette Stadium, Boston MA ", description: 'Come kick it', time: "12pm", user_id: 1)
+>>>>>>> ece080368b7f5266853752d3858c9c1a98457acf
 @event = Event.create(title: "US Open Cocktail Hour by Chase Bank", date: "August 5, 2021", location: "USTA Billie Jean King National Tennis Center, Queens NY")
 @event = Event.create(title: "Meet Spiderman at ComiCon by Marvel", date: "April 1 2021", location: "SD Convention Center, San Diego CA")
 @event = Event.create(title: "Frozen 3 World Premier by Disney", date: "December 20, 2020", location: "Angelika Film Center, New York NY")

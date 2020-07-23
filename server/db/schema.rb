@@ -10,34 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_21_183517) do
+ActiveRecord::Schema.define(version: 2020_07_23_132347) do
 
-  create_table "admins", force: :cascade do |t|
-    t.string "phone"
-    t.string "email"
-    t.string "password_digest"
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "events", force: :cascade do |t|
-    t.integer "user_id"
+    t.bigint "user_id", null: false
     t.string "title"
+    t.string "description"
+    t.string "time"
     t.datetime "date"
-    t.string "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "location"
     t.index ["user_id"], name: "index_events_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "name"
     t.string "phone"
     t.string "email"
     t.string "password_digest"
+    t.bigint "event_id"
+    t.string "avatar"
+    t.boolean "admin"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.boolean "admin"
+    t.index ["event_id"], name: "index_users_on_event_id"
   end
 
+  add_foreign_key "events", "users"
 end

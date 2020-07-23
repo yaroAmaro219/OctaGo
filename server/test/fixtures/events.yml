@@ -1,13 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  user: 
+  user: one
   title: MyString
-  date: 2020-07-20 15:09:45
-  location: MyString
+  description: MyString
+  time: MyString
+  date: 2020-07-23 09:04:17
 
 two:
-  user: 
+  user: two
   title: MyString
-  date: 2020-07-20 15:09:45
-  location: MyString
+  description: MyString
+  time: MyString
+  date: 2020-07-23 09:04:17
