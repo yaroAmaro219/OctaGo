@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_23_132347) do
+ActiveRecord::Schema.define(version: 2020_07_23_172634) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,7 +24,20 @@ ActiveRecord::Schema.define(version: 2020_07_23_132347) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "location"
+    t.string "users"
+    t.string "ticket"
+    t.string "checkin"
     t.index ["user_id"], name: "index_events_on_user_id"
+  end
+
+  create_table "tickets", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "event_id", null: false
+    t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["event_id"], name: "index_tickets_on_event_id"
+    t.index ["user_id"], name: "index_tickets_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -37,8 +50,13 @@ ActiveRecord::Schema.define(version: 2020_07_23_132347) do
     t.boolean "admin"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "ticket_id"
     t.index ["event_id"], name: "index_users_on_event_id"
+    t.index ["ticket_id"], name: "index_users_on_ticket_id"
   end
 
   add_foreign_key "events", "users"
+  add_foreign_key "tickets", "events"
+  add_foreign_key "tickets", "users"
+  add_foreign_key "users", "tickets"
 end

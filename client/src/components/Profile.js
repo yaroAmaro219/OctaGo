@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 export default class Profile extends Component {
   render() {
@@ -8,6 +9,11 @@ export default class Profile extends Component {
         Hello, {currentUser
           &&
           currentUser.email}
+          <div class="bottom-links">
+          <button><Link to='/'>Home</Link></button>
+          <button><Link to='/events'>Check In</Link></button>
+          <button><Link to='/profile'>Profile</Link></button>
+        </div>
       </div>
     )
   }
