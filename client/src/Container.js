@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import Events from './components/Events'
 import Register from './components/Register'
 import Home from './components/Home'
+import Profile from './components/Profile'
 import octago from './images/octago logo.png'
 import {
   loginUser,
@@ -165,6 +166,16 @@ import {
         )}/>
         <Route exact path="/" render={(props) => (
             <Home
+              handleRegister={this.handleRegister}
+              handleChange={this.registerHandleChange}
+              registerFormData={this.state.registerFormData}
+              currentUser={this.state.currentUser}
+              getEvent={this.getEvent}
+              event={this.state.event}
+            {...props}/>
+        )}/>
+        <Route exact path="/profile" render={(props) => (
+            <Profile
               handleRegister={this.handleRegister}
               handleChange={this.registerHandleChange}
               registerFormData={this.state.registerFormData}

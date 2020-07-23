@@ -1,10 +1,16 @@
 .event {
   border: solid black 2px;
-  padding: 18px 72px 18px 72px;
   margin: 18px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
+  width: 333px;
+  height: 100%;
+}
+
+.event-p {
+  padding-left: 9px;
 }
 
 .sign-up {

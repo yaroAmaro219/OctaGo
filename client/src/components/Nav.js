@@ -9,6 +9,13 @@ export default class Nav extends Component {
       toggle: false
     }
   }
+
+  // logout = () => {
+  //   this.props.handleLogout();
+  //   const toggle = () => document.getElementById("nav-toggle").checked = false;
+  //   toggle();
+  // }
+
   render() {
     const {currentUser} = this.props
     console.log({currentUser})
@@ -21,16 +28,22 @@ export default class Nav extends Component {
           </label>
       <div class="menu">
         <ul>
-            <li><Link to="/" class="nav-link">Home</Link></li>
-            <li><Link to="/events" class="nav-link" >Events</Link></li>
-              <li><Link to="/profile" class="nav-link">Profile</Link></li>
+              <li><Link to="/" class="nav-link"
+                onClick={() => document.getElementById("nav-toggle").checked = false}
+              >Home</Link></li>
+              <li><Link to="/events" class="nav-link"
+                onClick={() => document.getElementById("nav-toggle").checked = false}>Events</Link></li>
+              <li><Link to="/profile" class="nav-link"
+                onClick={() => document.getElementById("nav-toggle").checked = false}>Profile</Link></li>
               <li>
                 {
                   this.props.currentUser
-                ?
-                <button class="nav-link" onClick={this.props.handleLogout}>Logout</button>
+                    ?
+                    
+                <Link class="nav-link" onClick={this.props.handleLogout }>Logout</Link>
                 :
-                <Link to="/login" class="nav-link">Login</Link>
+                    <Link to="/login" class="nav-link"
+                    onSubmit={() => document.getElementById("nav-toggle").checked = false}>Login</Link>
                 }
               </li>
         </ul>
