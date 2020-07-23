@@ -45,10 +45,8 @@ class UsersController < ApplicationController
     def set_user
       @user = User.find(params[:id])
     end
-
     # Only allow a trusted parameter "white list" through.
     def user_params
-      # params.require(:user).permit(:phone, :email, :password_digest)
-      params.require(:user).permit(:phone, :email, :password, :admin)
+      params.require(:user).permit(:name, :phone, :email, :password, :event, :avatar, :admin)
     end
 end
