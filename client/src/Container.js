@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { Route, Switch, withRouter } from 'react-router'
+import {Link} from 'react-router-dom'
 import Login from './components/Login'
 import Nav from './components/Nav'
 import Events from './components/Events'
 import Register from './components/Register'
 import Home from './components/Home'
 import Profile from './components/Profile'
-import octago from './images/octago logo.png'
+import octago from './images/logo-white 2.png'
 import {
   loginUser,
   verifyUser,
@@ -33,13 +34,14 @@ import {
       },
       event: '',
       newEvent: {
-        user: '',
+        user_id: '',
         title: '',
         date: '',
         time: '',
-        location: ''
+        location: '',
+        date: '',
       }
-      }
+    }
   }
   
   componentDidMount = async () => {
@@ -95,15 +97,15 @@ import {
     }));
   }
    
-   eventHandleChange = (e) => {
-     const { name, value } = e.target;
-     this.setState(prevState => ({
-       newEvent: {
-         ...prevState.newEvent,
-         [name]: value
-       }
-     }))
-   }
+  eventHandleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState(prevState => ({
+      newEvent: {
+        ...prevState.newEvent,
+        [name]: value
+      }
+    }))
+  }
 
   handleChange = (e) => {
     const value = e.target.value;
@@ -141,23 +143,22 @@ import {
     console.log('event', this.state.event)
     return (
       <div>
-         <Nav
+         {/* <Nav
           handleLogin={this.handleLogin}
           handleLogout={this.handleLogout}
           currentUser={this.state.currentUser}
-        />
+        /> */}
         <img src={octago} class="octago"/>
         <Switch>
           <Route exact path="/login" render={(props) => (
             <Login
-            handleLogin={this.handleLogin}
-          handleLogout={this.handleLogout}
+              handleLogin={this.handleLogin}
+              handleLogout={this.handleLogout}
               user={this.state.currentUser}
               authFormData={this.state.authFormData}
               authHandleChange={this.authHandleChange}
-            handleChange={this.handleChange}
-            {...props}/>
-        )}/>
+              handleChange={this.handleChange}
+            />)}/>
         <Route exact path="/events" render={(props) => (
             <Events
               getEvent={this.getEvent}
@@ -166,16 +167,14 @@ import {
               addEvent={this.addEvent}
               createEvent={this.createEvent}
               handleChang={this.eventHandleChange}
-            newEvent={this.state.newEvent}
-            {...props}/>
-        )}/>
+              newEvent={this.state.newEvent}
+            />)}/>
         <Route exact path="/register" render={(props) => (
             <Register
               handleRegister={this.handleRegister}
               handleChange={this.registerHandleChange}
-            registerFormData={this.state.registerFormData}
-            {...props}/>
-        )}/>
+              registerFormData={this.state.registerFormData}
+            />)}/>
         <Route exact path="/" render={(props) => (
             <Home
               handleRegister={this.handleRegister}
@@ -184,8 +183,7 @@ import {
               currentUser={this.state.currentUser}
               getEvent={this.getEvent}
               event={this.state.event}
-            {...props}/>
-        )}/>
+            />)}/>
         <Route exact path="/profile" render={(props) => (
             <Profile
               handleRegister={this.handleRegister}
@@ -194,9 +192,9 @@ import {
               currentUser={this.state.currentUser}
               getEvent={this.getEvent}
               event={this.state.event}
-            {...props}/>
-        )}/>
-          </Switch>
+            />)}/>
+        </Switch>
+        
         </div>
     )
   }

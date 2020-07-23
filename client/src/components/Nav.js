@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import octago from '../images/octago logo.png'
 
 export default class Nav extends Component {
   constructor(props) {
@@ -27,14 +28,19 @@ export default class Nav extends Component {
             <span class="toggle-words"><i class="fa fa-bars" id="bar"></i></span>
           </label>
       <div class="menu">
-        <ul>
-              <li><Link to="/" class="nav-link"
+            <ul>
+              {/* <img src={octago} class="octago"/> */}
+              {/* <li><Link to="/" class="nav-link"
                 onClick={() => document.getElementById("nav-toggle").checked = false}
-              >Home</Link></li>
+              >Home</Link></li> */}
               <li><Link to="/events" class="nav-link"
-                onClick={() => document.getElementById("nav-toggle").checked = false}>Events</Link></li>
-              <li><Link to="/profile" class="nav-link"
-                onClick={() => document.getElementById("nav-toggle").checked = false}>Profile</Link></li>
+                onClick={() => document.getElementById("nav-toggle").checked = false}>Home</Link></li>
+              {/* <li><Link to="/profile" class="nav-link"
+                onClick={() => document.getElementById("nav-toggle").checked = false}>Profile</Link></li> */}
+                <li><Link to="/profile" class="nav-link"
+                onClick={() => document.getElementById("nav-toggle").checked = false}>Check In</Link></li>
+                <li><Link to="/profile" class="nav-link"
+                onClick={() => document.getElementById("nav-toggle").checked = false}>My Tickets</Link></li>
               <li>
                 {
                   this.props.currentUser

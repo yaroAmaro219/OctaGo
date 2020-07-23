@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
-import logo from '../images/bmw-logo.svg'
+import { Link } from 'react-router-dom'
+import octago from '../images/logo-white 2.png'
+import bmw from '../images/bmw-logo.svg'
+import Nav from './Nav'
 
 export default class Events extends Component {
   constructor() {
@@ -16,32 +18,43 @@ export default class Events extends Component {
       &&
       event.map((event, index) => {
         return (
-          <div>
+          <div >
             <div class="event">
-            <p class="event-p">Title: {event.title}   </p>
-            <p class="event-p">Location:{event.location} </p>
-            <p class="event-p">Time: {event.time} </p>
+              <h4 class="event-p">{event.title}</h4>
+              <p class="event-p">{event.time}</p>
+              <p class="event-p">{event.location}</p>
+              <div class="event-container">
+              <button class="event-button">Live Queue</button>
+                <button class="event-button">Check In</button>
+                </div>
             </div>
-            <button class="sign-up">Sign Up</button>
+           
+            
           </div>
         )
       })
 
     return (
       <div class="events-page">
-        <h1>Events</h1>
-        {currentUser
+        <Nav />
+        <img src={bmw} class='video'/>
+        {/* <img src={octago} class='octago'/> */}
+        <div class="new-event">
+          
+        <h1 class="upcoming-events">Upcoming Events</h1>
+        {/* {currentUser
               && 
               currentUser.admin
               ?
-              <button onClick={() => {this.setState({newEvent: !this.state.newEvent})}}>Create New Event</button>
+              <button class="add-event" onClick={() => {this.setState({newEvent: !this.state.newEvent})}}>+</button>
               : 
               null
-        }
+          } */}
+          </div>
         {this.state.newEvent 
           ?
           <div class="new-event">
-            <h1>New Event</h1>
+            
             <form class="new-event-form" onSubmit={handleEvent}>
             <input name="title" class="new-event-input" placeholder="Title" onChange={handleChange} value={newEvent.title}></input>
             <input name="Location" class="new-event-input" placeholder="Location" onChange={handleChange} value={newEvent.location}></input>
@@ -64,6 +77,11 @@ export default class Events extends Component {
       </form> */}
         {events}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <div class="bottom-links">
+          <button><Link to='/'>Home</Link></button>
+          <button><Link to='/events'>Check In</Link></button>
+          <button><Link to='/profile'>Profile</Link></button>
+        </div>
       </div>
     )
   }
