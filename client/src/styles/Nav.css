@@ -30,15 +30,15 @@ a {
 }
 
 .nav-link {
-  color: Black;
   background-color: transparent;
   border: none;
+  text-decoration: none;
+  color: grey;
+  padding: 20px;
+  display: block;
+  border-bottom: 1px solid #ccc;
   /* padding: 18px;
   margin: 72px; */
-}
-
-.nav-link #nav-toggle:active {
-
 }
 
 #nav-toggle {
@@ -52,7 +52,7 @@ a {
   right: -100%;
   top: 0;
   height: 100%;
-  width: 250px;
+  width: 200px;
 }
 
 #nav-toggle ~ label {
@@ -72,8 +72,8 @@ a {
 #nav-toggle:checked ~ label {
   background-color: grey;
   color: white;
-  -webkit-transform: translateX(-250px);
-          transform: translateX(-250px);
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
 }
 #nav-toggle:checked ~ label::before {
   content: "Close";

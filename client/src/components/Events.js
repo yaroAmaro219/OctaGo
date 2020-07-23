@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 import logo from '../images/bmw-logo.svg'
 
 export default class Events extends Component {
   constructor() {
     super();
-
     this.state = {
       newEvent: false
     }
-}
- 
+  }
 
   render() {
     const { event, currentUser, addEvent} = this.props
@@ -18,13 +17,10 @@ export default class Events extends Component {
       event.map((event, index) => {
         return (
           <div>
-           
-
             <div class="event">
-            <p>Title: {event.title}   </p>
-            <p>Location:{event.location} </p>
-              <p>Time: {event.time} </p>
-              
+            <p class="event-p">Title: {event.title}   </p>
+            <p class="event-p">Location:{event.location} </p>
+            <p class="event-p">Time: {event.time} </p>
             </div>
             <button class="sign-up">Sign Up</button>
           </div>
@@ -38,7 +34,6 @@ export default class Events extends Component {
               && 
               currentUser.admin
               ?
-
               <button onClick={() => {this.setState({newEvent: !this.state.newEvent})}}>Create New Event</button>
               : 
               null
@@ -51,7 +46,7 @@ export default class Events extends Component {
             <input class="new-event-input" placeholder="Location"></input>
             <input class="new-event-input" placeholder="Date"></input>
             <input class="new-event-input" placeholder="Time"></input>
-            <button onClick={this.props.createEvent()}>Create</button>
+            <Link onClick={this.props.createEvent()}>Create</Link>
              </div>
           :
           null
