@@ -94,6 +94,16 @@ import {
       }
     }));
   }
+   
+   eventHandleChange = (e) => {
+     const { name, value } = e.target;
+     this.setState(prevState => ({
+       newEvent: {
+         ...prevState.newEvent,
+         [name]: value
+       }
+     }))
+   }
 
   handleChange = (e) => {
     const value = e.target.value;
@@ -154,7 +164,9 @@ import {
               event={this.state.event}
               currentUser={this.state.currentUser}
               addEvent={this.addEvent}
-            createEvent={this.createEvent}
+              createEvent={this.createEvent}
+              handleChang={this.eventHandleChange}
+            newEvent={this.state.newEvent}
             {...props}/>
         )}/>
         <Route exact path="/register" render={(props) => (
