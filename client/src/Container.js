@@ -4,6 +4,8 @@ import Login from './components/Login'
 import Nav from './components/Nav'
 import Events from './components/Events'
 import Register from './components/Register'
+import Home from './components/Home'
+import octago from './images/octago logo.png'
 import {
   loginUser,
   verifyUser,
@@ -22,6 +24,7 @@ import {
         phone: '',
         email: '',
         password: '',
+        admin: true
       },
       authFormData: {
         email: '',
@@ -32,6 +35,7 @@ import {
         user: '',
         title: '',
         date: '',
+        time: '',
         location: ''
       }
       }
@@ -105,17 +109,19 @@ import {
     }
   }
    
-  addEvent = async () => {
+  createEvent = async () => {
     const newEvent = await postEvent({
       user: '',
       title: '',
       date: '',
+      time: '',
       location: ''
     })
     this.setState(prevState => ({
       user: newEvent,
       title: "",
       date: "",
+      time: '',
       location: "",
     }))
   }
@@ -128,11 +134,8 @@ import {
           handleLogin={this.handleLogin}
           handleLogout={this.handleLogout}
           currentUser={this.state.currentUser}
-
         />
-        <h1>OctaGo</h1>
-       
-       
+        <img src={octago} class="octago"/>
         <Switch>
           <Route exact path="/login" render={(props) => (
             <Login
@@ -149,7 +152,8 @@ import {
               getEvent={this.getEvent}
               event={this.state.event}
               currentUser={this.state.currentUser}
-            addEvent={this.addEvent}
+              addEvent={this.addEvent}
+            createEvent={this.createEvent}
             {...props}/>
         )}/>
         <Route exact path="/register" render={(props) => (
@@ -159,10 +163,18 @@ import {
             registerFormData={this.state.registerFormData}
             {...props}/>
         )}/>
-           
+        <Route exact path="/" render={(props) => (
+            <Home
+              handleRegister={this.handleRegister}
+              handleChange={this.registerHandleChange}
+              registerFormData={this.state.registerFormData}
+              currentUser={this.state.currentUser}
+              getEvent={this.getEvent}
+              event={this.state.event}
+            {...props}/>
+        )}/>
           </Switch>
         </div>
-     
     )
   }
  }

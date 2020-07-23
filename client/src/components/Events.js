@@ -2,46 +2,14 @@ import React, { Component } from 'react'
 import logo from '../images/bmw-logo.svg'
 
 export default class Events extends Component {
+  constructor() {
+    super();
 
-
-  // userAdmin = () => {
-  //   const { currentUser } = this.props
-  //   const user = currentUser
-  //     &&
-  //     currentUser.map((admin, index) => {
-  //     return (
-  //       {
-  //         admin.admin
-  //           ?
-      
-  //       <>
-  //         create Event
-  //         </>
-      
-  //         :
-  //   null
-  //       }))
-  //     }
-  //   if (user) {
-  //     return (
-  //       <>
-  //         <p>Create Event</p>
-  //         </>
-  //     )
-  //   }
-  // }
-
-
-  
-
-  // admin() {
-  //   var admin = this.props.currentUser
-  //   ?
-  //     this.props.currentUser.admin
-  //     :
-  //     null
-  //   return([admin])
-  // }
+    this.state = {
+      newEvent: false
+    }
+}
+ 
 
   render() {
     const { event, currentUser, addEvent} = this.props
@@ -50,29 +18,45 @@ export default class Events extends Component {
       event.map((event, index) => {
         return (
           <div>
-            <button onClick={addEvent()}>Create New Event</button>
-            {event.title}
-            {event.location}
-            {event.time} 
+           
+
+            <div class="event">
+            <p>Title: {event.title}   </p>
+            <p>Location:{event.location} </p>
+              <p>Time: {event.time} </p>
+              
+            </div>
+            <button class="sign-up">Sign Up</button>
           </div>
         )
       })
-    
-    // const user = currentUser
-    //   && 
-    //   currentUser.map((user, index) => {
-    //     return (
-    //       <div>
-    //         {user.admin}
-    //         {user.email}
-    //         </div>
-    //   )
-    // })
+
     return (
-      <div>
+      <div class="events-page">
         <h1>Events</h1>
+        {currentUser
+              && 
+              currentUser.admin
+              ?
+
+              <button onClick={() => {this.setState({newEvent: !this.state.newEvent})}}>Create New Event</button>
+              : 
+              null
+        }
+        {this.state.newEvent 
+          ?
+          <div class="new-event">
+            <h1>New Event</h1>
+            <input class="new-event-input" placeholder="Title"></input>
+            <input class="new-event-input" placeholder="Location"></input>
+            <input class="new-event-input" placeholder="Date"></input>
+            <input class="new-event-input" placeholder="Time"></input>
+            <button onClick={this.props.createEvent()}>Create</button>
+             </div>
+          :
+          null
+            }
         {events}
-        {/* {user} */}
         <img src={logo} className="App-logo" alt="logo" />
       </div>
     )

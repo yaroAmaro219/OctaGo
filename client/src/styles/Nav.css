@@ -1,34 +1,121 @@
-.nav  {
+.nav {
   display: flex;
   margin-right: auto;
   padding: 27px;
   position: fixed;
+  height: 100%;
 }
 
-.links{
+.links {
   display: flex;
   flex-direction: column;
   background-color: black;
   color: white;
   padding: 9px;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  width: 72px;
+  transform: translateX(10vw);
 }
 
 #bar {
-  position: static;
-
+  display: block;
+  transition: .5s transform;
+  transition-timing-function: cubic-bezier(.38, .52, .37, 1.27);
 }
 
 a {
   text-decoration: none;
 }
 
-.icon {
-  
-  
+.nav-link {
+  color: Black;
+  background-color: transparent;
+  border: none;
+  /* padding: 18px;
+  margin: 72px; */
 }
 
-.nav-link {
+.nav-link #nav-toggle:active {
+
+}
+
+#nav-toggle {
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  width: 250px;
+}
+
+#nav-toggle ~ label {
+  display: block;
+  -webkit-transition: .5s transform;
+  transition: .5s transform;
+  -webkit-transition-timing-function: cubic-bezier(0.38, 0.52, 0.37, 1.27);
+          transition-timing-function: cubic-bezier(0.38, 0.52, 0.37, 1.27);
+  background-color: white;
+  padding: 15px 0;
+  border: 1px solid grey;
+  border-radius: 3px;
+  width: 66px;
+  text-align: center;
+}
+
+#nav-toggle:checked ~ label {
+  background-color: grey;
   color: white;
-  background-color: black;
-  border: none;
+  -webkit-transform: translateX(-250px);
+          transform: translateX(-250px);
+}
+#nav-toggle:checked ~ label::before {
+  content: "Close";
+}
+#nav-toggle:checked ~ label .toggle-words {
+  display: none;
+}
+#nav-toggle:checked ~ .menu {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+.menu {
+  cursor: pointer;
+  background-color: #efefef;
+  -webkit-transition: .53s transform;
+  transition: .53s transform;
+  -webkit-transition-timing-function: cubic-bezier(0.38, 0.52, 0.37, 1);
+          transition-timing-function: cubic-bezier(0.38, 0.52, 0.37, 1);
+}
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  list-style: none;
+}
+.menu li Link {
+  text-decoration: none;
+  color: grey;
+  padding: 20px;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+}
+
+li {
+  margin: 18px;
 }
