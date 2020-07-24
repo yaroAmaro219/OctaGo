@@ -58,7 +58,6 @@ Ruby on Rails | Backend server with easy database and routing setup. |
 
 #### Wireframes
 
-![Database Design](./docs/Databasedesign.png)
 
 #### Component Hierarchy
 
@@ -92,6 +91,7 @@ Login | Class | No | Yes | Contains Login form and register button.  |
 ### MVP Server (Back End)
 
 #### ERD Model
+![Database Design](./docs/Databasedesign.png)
 
 #### Endpoints
   Prefix Verb   URI Pattern                                                                              Controller#Action
