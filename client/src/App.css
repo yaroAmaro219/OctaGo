@@ -8,11 +8,24 @@
 
 }
 
+Link {
+  text-decoration: none;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+.video {
+  width: 333px;
+  height: 799px;
+}
+
+.lock-screen {
+  background-color: #C77E7E;
 }
 
 .main {

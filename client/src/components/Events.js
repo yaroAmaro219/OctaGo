@@ -25,7 +25,7 @@ export default class Events extends Component {
               <p class="event-p">{event.location}</p>
               <div class="event-container">
               <button class="event-button">Live Queue</button>
-                <button class="event-button">Check In</button>
+                <button class="event-button"><Link to='/proceed'>Check In</Link></button>
                 </div>
             </div>
            
@@ -36,9 +36,10 @@ export default class Events extends Component {
 
     return (
       <div class="events-page">
-        <Nav />
-        <img src={bmw} class='video'/>
-        {/* <img src={octago} class='octago'/> */}
+        {/* <Nav /> */}
+        <img src={octago} class='octago'/>
+        <img src={bmw} class='gif'/>
+        
         <div class="new-event">
           
         <h1 class="upcoming-events">Upcoming Events</h1>
@@ -77,11 +78,11 @@ export default class Events extends Component {
       </form> */}
         {events}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <div class="bottom-links">
+        {/* <div class="bottom-links">
           <button><Link to='/'>Home</Link></button>
           <button><Link to='/events'>Check In</Link></button>
           <button><Link to='/profile'>Profile</Link></button>
-        </div>
+        </div> */}
       </div>
     )
   }

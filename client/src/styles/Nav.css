@@ -38,7 +38,7 @@ a {
   background-color: transparent;
   border: none;
   text-decoration: none;
-  color: grey;
+  color: white;
   padding: 20px;
   display: block;
   border-bottom: 1px solid #ccc;
@@ -94,7 +94,7 @@ a {
 
 .menu {
   cursor: pointer;
-  background-color: #efefef;
+  background-color: #9D9955;
   -webkit-transition: .53s transform;
   transition: .53s transform;
   -webkit-transition-timing-function: cubic-bezier(0.38, 0.52, 0.37, 1);
