@@ -24,7 +24,7 @@ const Register = (props) => {
         </div>
       <div className='right-container'>
           <div className="need-account">
-            <h4 className='already'><Link to='/login'>Already A Member?</Link></h4>
+            <h4 className='already'><Link to='/login' class='link'>Already A Member?</Link></h4>
             {/* <button onClick={() => { props.history.push('/events') }} className='submit-button'>Sign In</button> */}
         </div>
         </div>

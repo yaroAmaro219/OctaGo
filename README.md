@@ -59,6 +59,7 @@ Ruby on Rails | Backend server with easy database and routing setup. |
 #### Wireframes
 
 ![Database Design](./docs/Databasedesign.png)
+!
 
 #### Component Hierarchy
 

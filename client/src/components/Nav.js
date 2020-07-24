@@ -35,12 +35,14 @@ export default class Nav extends Component {
               >Home</Link></li> */}
               <li><Link to="/events" class="nav-link"
                 onClick={() => document.getElementById("nav-toggle").checked = false}>Home</Link></li>
+              <li><Link to="/proceed" class="nav-link"
+                onClick={() => document.getElementById("nav-toggle").checked = false}>Check-In</Link></li>
+              <li><Link to="/profile" class="nav-link"
+                onClick={() => document.getElementById("nav-toggle").checked = false}>My Tickets</Link></li>
+              <li><Link to="/profile" class="nav-link"
+                onClick={() => document.getElementById("nav-toggle").checked = false}>How It Works</Link></li>
               {/* <li><Link to="/profile" class="nav-link"
                 onClick={() => document.getElementById("nav-toggle").checked = false}>Profile</Link></li> */}
-                <li><Link to="/proceed" class="nav-link"
-                onClick={() => document.getElementById("nav-toggle").checked = false}>Check-In</Link></li>
-                <li><Link to="/profile" class="nav-link"
-                onClick={() => document.getElementById("nav-toggle").checked = false}>My Tickets</Link></li>
               <li>
                 {
                   this.props.currentUser
@@ -48,7 +50,7 @@ export default class Nav extends Component {
                     
                 <Link class="nav-link" onClick={this.props.handleLogout } >Logout</Link>
                 :
-                    <Link to="/login" class="nav-link"
+                    <Link to="/login" class="nav-account"
                     onSubmit={() => document.getElementById("nav-toggle").checked = false}>Login</Link>
                 }
               </li>

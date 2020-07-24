@@ -34,7 +34,7 @@ import {
         name: '',
         email: '',
         password: '',
-        phone: '12',
+        phone: '9',
         admin: false,
       },
       authFormData: {
@@ -149,7 +149,6 @@ import {
   }
   
   render() {
-    console.log('event', this.state.event)
     return (
       <div>
          <Nav
@@ -157,10 +156,6 @@ import {
           handleLogout={this.handleLogout}
           currentUser={this.state.currentUser}
         />
-        {/* <Intro />
-        <EndIntro />
-        <Onboard /> */}
-        {/* <img src={octago} class="octago"/> */}
         <Switch>
           <Route exact path="/login" render={(props) => (
             <Login
@@ -204,17 +199,17 @@ import {
               currentUser={this.state.currentUser}
               getEvent={this.getEvent}
               event={this.state.event}
-            />)}/>
+            />)} />
+        <Route exact path="/checkin" render={(props) => (
+            <CheckIn
+              currentUser={this.state.currentUser}
+            />)} />
         <Route exact path="/Intro" render={() => <Intro />} />
         <Route exact path="/EndIntro" render={() => <EndIntro />} />
         <Route exact path="/Onboard" render={() => <Onboard />} />
         <Route exact path="/proceed" render={() => <Proceed />} />
         <Route exact path="/arrived" render={() => <Arrived />} />
         <Route exact path="/approved" render={() => <Approved />} />
-          <Route exact path="/checkin" render={(props) =>
-            <CheckIn
-            currentUser={this.state.currentUser}
-            />} />
         <Route exact path="/ticket" render={() => <Ticket />} />
         </Switch>
         

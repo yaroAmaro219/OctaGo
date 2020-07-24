@@ -1,15 +1,22 @@
 .input-container {
-
   flex-direction: column;
   /* width: 66%; */
   align-items: flex-start;
   margin-bottom: 18px;
 }
 
+.input {
+  border-radius: 12%;
+  width: 99px;
+}
+
+.link {
+  color: white;
+}
+
 .login-form {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 36px;
+  flex-direction: column; 
 }
 
 Link {
@@ -32,6 +39,7 @@ Link {
 .already {
   color: white;
   text-decoration: none;
+  font-size: x-large;
 }
 
 .submit-button {
