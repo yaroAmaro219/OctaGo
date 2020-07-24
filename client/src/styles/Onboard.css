@@ -7,6 +7,10 @@
     width: 300px;
     height: 400px;
 }
+.Onboard-logo {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
 .instructions,
 .instructions-1,
 .instructions-2,
@@ -23,14 +27,18 @@
     margin-bottom: 25px;
 }
 .instructions-title,
-.ionstructions-header {
+.instructions-header {
     font-family: Arial, sans-serif;
     font-size: 24px;
     letter-spacing: 3px;
 }
 .instructions-header {
     color: #C3B997;
-
+    line-height: 3px;
+}
+.instructions-title1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .circle,
 .fill-circle {
@@ -41,12 +49,9 @@
     margin-left: 5px;
     margin-right: 5px;
 }
-
 .fill-circle {
     background-color: white;
 }
-
-
 .bottom {
     display: flex;
     flex-direction: row;
@@ -56,7 +61,6 @@
     display: flex;
     flex-direction: row;
 }
-
 .instructions-end {
     margin-bottom: 50px;
 }
@@ -73,4 +77,14 @@
 .bottom-link {
     letter-spacing: 3px;
     color: #FFF;
+}
+.Onboard-logo {
+    text-shadow: 1px 1px 2px #1D1E20; 
+    opacity: 0.0;
+    animation: fadeIn ease 45s;
+    -webkit-animation: fadeIn ease 45s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }

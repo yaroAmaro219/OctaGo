@@ -1,18 +1,20 @@
 import React from 'react'
 import 'react-slideshow-image/dist/styles.css'
-import { Slide } from 'react-slideshow-image';
 import {Link} from 'react-router-dom'
 import '../styles/Onboard.css'
-
-
-
+import logo from '../images/logo-white 2.png'
 
 export default function Onboard () {
     return (
     <div>
+        <img
+            class="Onboard-logo"
+            alt="Onboard Logo"
+            src={logo}/>
 
-        <p class="instructions-header">Our first contactless virtual check-in.</p>
-        <p class="instructions-title">Welcome!</p>
+        <p class="instructions-header">Our first contactless</p>
+        <p class="instructions-header"> virtual check-in.</p>
+        <p class="instructions-title1">Welcome!</p>
         <p class="instructions">Please arrive at your event</p>
         <p class="instructions"> and find your designated </p>
         <p class="instructions">gate.</p>
