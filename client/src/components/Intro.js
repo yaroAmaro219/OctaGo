@@ -8,17 +8,13 @@ import Intro3 from '../images/Intro3.png'
 import Intro4 from '../images/Intro4.png'
 import '../styles/Onboard.css'
 
-
 const properties = {
     arrows: false
   };
 
-
-
-
 export default function Intro () {
     return (
-    <div className="slide-container">
+    <div>
         <Slide {...properties}>
             <img
                 class="Onboard-img"
@@ -37,28 +33,29 @@ export default function Intro () {
                 alt="Intro4"
                 src={Intro4}/>
         </Slide>
-
-        <Link to='/events'>Skip</Link>
-        <Link to='/EndIntro'>Next</Link>
         
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <p class="instructions-title">Validate your ticket</p>
+        <p class="instructions">Tap check-in button and</p>
+        <p class="instructions">point your camera at the</p>
+        <p class="instructions">door.</p>
+        <p class="instructions-1">Tap virtual ticket to</p>
+        <p class="instructions-2">validate.</p>
+        
+        <div class="bottom1">
+              <div class="bottom">
+                  <div class="bottom-link">
+                        <Link to='/events'>Skip</Link>
+                  </div>
+                  <div class="circles">
+                        <div class="circle"></div>
+                        <div class="fill-circle"></div>
+                        <div class="circle"></div>
+                  </div>
+                <div class="bottom-link">
+                        <Link to='/EndIntro'>Next</Link>
+                </div>
+              </div>
+        </div>
       </div>
-
-
-
-
-
     );
  }

@@ -1,4 +1,76 @@
+
 .Onboard-img {
-    height: 500px;
+    height: 400px;
     width: 300px;
+}
+.Onboard-img-end{
+    width: 300px;
+    height: 400px;
+}
+.instructions,
+.instructions-1,
+.instructions-2,
+.instructions-end {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 2px;
+}
+.instructions-1 {
+    margin-top: 50px;
+}
+.instructions-2 {
+    margin-bottom: 25px;
+}
+.instructions-title,
+.ionstructions-header {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+.instructions-header {
+    color: #C3B997;
+
+}
+.circle,
+.fill-circle {
+    border-radius: 100%;
+    border: 2px solid white;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fill-circle {
+    background-color: white;
+}
+
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.circles {
+    display: flex;
+    flex-direction: row;
+}
+
+.instructions-end {
+    margin-bottom: 50px;
+}
+.start-link {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #E6010B;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 14px;
+}
+.bottom-link {
+    letter-spacing: 3px;
+    color: #FFF;
 }
