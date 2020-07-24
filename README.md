@@ -94,6 +94,52 @@ Login | Class | No | Yes | Contains Login form and register button.  |
 #### ERD Model
 
 #### Endpoints
+  Prefix Verb   URI Pattern                                                                              Controller#Action
+                              tickets GET    /tickets(.:format)                                                                       tickets#index
+                                      POST   /tickets(.:format)                                                                       tickets#create
+                               ticket GET    /tickets/:id(.:format)                                                                   tickets#show
+                                      PATCH  /tickets/:id(.:format)                                                                   tickets#update
+                                      PUT    /tickets/:id(.:format)                                                                   tickets#update
+                                      DELETE /tickets/:id(.:format)                                                                   tickets#destroy
+                               events GET    /events(.:format)                                                                        events#index
+                                      POST   /events(.:format)                                                                        events#create
+                                event GET    /events/:id(.:format)                                                                    events#show
+                                      PATCH  /events/:id(.:format)                                                                    events#update
+                                      PUT    /events/:id(.:format)                                                                    events#update
+                                      DELETE /events/:id(.:format)                                                                    events#destroy
+                                users GET    /users(.:format)                                                                         users#index
+                                      POST   /users(.:format)                                                                         users#create
+                                 user GET    /users/:id(.:format)                                                                     users#show
+                                      PATCH  /users/:id(.:format)                                                                     users#update
+                                      PUT    /users/:id(.:format)                                                                     users#update
+                                      DELETE /users/:id(.:format)                                                                     users#destroy
+                   event_user_tickets GET    /events/:event_id/users/:user_id/tickets(.:format)                                       tickets#index
+                                      POST   /events/:event_id/users/:user_id/tickets(.:format)                                       tickets#create
+                    event_user_ticket GET    /events/:event_id/users/:user_id/tickets/:id(.:format)                                   tickets#show
+                                      PATCH  /events/:event_id/users/:user_id/tickets/:id(.:format)                                   tickets#update
+                                      PUT    /events/:event_id/users/:user_id/tickets/:id(.:format)                                   tickets#update
+                                      DELETE /events/:event_id/users/:user_id/tickets/:id(.:format)                                   tickets#destroy
+                          event_users GET    /events/:event_id/users(.:format)                                                        users#index
+                                      POST   /events/:event_id/users(.:format)                                                        users#create
+                           event_user GET    /events/:event_id/users/:id(.:format)                                                    users#show
+                                      PATCH  /events/:event_id/users/:id(.:format)                                                    users#update
+                                      PUT    /events/:event_id/users/:id(.:format)                                                    users#update
+                                      DELETE /events/:event_id/users/:id(.:format)                                                    users#destroy
+                                      GET    /events(.:format)                                                                        events#index
+                                      POST   /events(.:format)                                                                        events#create
+                                      GET    /events/:id(.:format)                                                                    events#show
+                                      PATCH  /events/:id(.:format)                                                                    events#update
+                                      PUT    /events/:id(.:format)                                                                    events#update
+                                      DELETE /events/:id(.:format)                                                                    events#destroy
+                                      GET    /users(.:format)                                                                         users#index
+                                      POST   /users(.:format)                                                                         users#create
+                                      GET    /users/:id(.:format)                                                                     users#show
+                                      PATCH  /users/:id(.:format)                                                                     users#update
+                                      PUT    /users/:id(.:format)                                                                     users#update
+                                      DELETE /users/:id(.:format)                                                                     users#destroy
+                           auth_login POST   /auth/login(.:format)                                                                    authentication#login
+                          auth_verify GET    /auth/verify(.:format)                                                                   authentication#verify
+
 
 ***
 
