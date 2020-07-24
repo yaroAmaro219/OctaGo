@@ -33,6 +33,7 @@ import {
         name: '',
         email: '',
         password: '',
+        phone: '11',
         admin: false,
       },
       authFormData: {
