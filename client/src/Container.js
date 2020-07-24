@@ -8,6 +8,9 @@ import Register from './components/Register'
 import Home from './components/Home'
 import Profile from './components/Profile'
 import octago from './images/logo-white 2.png'
+import Intro from './components/Intro'
+import EndIntro from './components/EndIntro'
+import Onboard from './components/Onboard'
 import {
   loginUser,
   verifyUser,
@@ -193,6 +196,9 @@ import {
               getEvent={this.getEvent}
               event={this.state.event}
             />)}/>
+        <Route exact path="/Intro" render={() => <Intro />} />
+        <Route exact path="/EndIntro" render={() => <EndIntro />} />
+        <Route exact path="/Onboard" render={() => <Onboard />} />
         </Switch>
         
         </div>
