@@ -11,6 +11,10 @@ import octago from './images/logo-white 2.png'
 import Intro from './components/Intro'
 import EndIntro from './components/EndIntro'
 import Onboard from './components/Onboard'
+import Proceed from './components/Proceed'
+import CheckIn from './components/CheckIn'
+import Arrived from './components/Arrived'
+import Ticket from './components/Ticket'
 import {
   loginUser,
   verifyUser,
@@ -26,10 +30,10 @@ import {
     this.state = {
       currentUser: null,
       registerFormData: {
-        phone: '',
+        name: '',
         email: '',
         password: '',
-        admin: true
+        admin: false,
       },
       authFormData: {
         email: '',
@@ -70,7 +74,7 @@ import {
     this.setState({
       currentUser
     })
-    this.props.history.push("/events")
+    this.props.history.push("/Intro")
   }
 
   handleLogout = () => {
@@ -146,12 +150,15 @@ import {
     console.log('event', this.state.event)
     return (
       <div>
-         {/* <Nav
+         <Nav
           handleLogin={this.handleLogin}
           handleLogout={this.handleLogout}
           currentUser={this.state.currentUser}
-        /> */}
-        <img src={octago} class="octago"/>
+        />
+        {/* <Intro />
+        <EndIntro />
+        <Onboard /> */}
+        {/* <img src={octago} class="octago"/> */}
         <Switch>
           <Route exact path="/login" render={(props) => (
             <Login
@@ -199,6 +206,13 @@ import {
         <Route exact path="/Intro" render={() => <Intro />} />
         <Route exact path="/EndIntro" render={() => <EndIntro />} />
         <Route exact path="/Onboard" render={() => <Onboard />} />
+        <Route exact path="/proceed" render={() => <Proceed />} />
+        <Route exact path="/arrived" render={() => <Arrived />} />
+          <Route exact path="/checkin" render={(props) =>
+            <CheckIn
+            currentUser={this.state.currentUser}
+            />} />
+        <Route exact path="/ticket" render={() => <Ticket />} />
         </Switch>
         
         </div>

@@ -9,7 +9,7 @@
 Event.destroy_all
 
 # @user = User.create(phone: "1234567890", email: "admin@email.com", password: "123456", admin: "true")
-@user = User.create(phone: "0987654321", email: "user@email.com", password: "123456", admin: "true")
+@user = User.create( email: "user@email.com", password: "123456", admin: "true")
 @user = User.create(phone: "0987654321", email: "user1@email.com", password: "123456", admin: "true")
 @user = User.create(phone: "0987654321", email: "user2@email.com", password: "123456", admin: "true")
 @user = User.create(phone: "0987654321", email: "user3@email.com", password: "123456", admin: "true")
