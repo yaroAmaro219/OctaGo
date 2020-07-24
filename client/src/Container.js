@@ -15,6 +15,7 @@ import Proceed from './components/Proceed'
 import CheckIn from './components/CheckIn'
 import Arrived from './components/Arrived'
 import Ticket from './components/Ticket'
+import Approved from './components/Approved'
 import {
   loginUser,
   verifyUser,
@@ -33,7 +34,7 @@ import {
         name: '',
         email: '',
         password: '',
-        phone: '11',
+        phone: '12',
         admin: false,
       },
       authFormData: {
@@ -209,6 +210,7 @@ import {
         <Route exact path="/Onboard" render={() => <Onboard />} />
         <Route exact path="/proceed" render={() => <Proceed />} />
         <Route exact path="/arrived" render={() => <Arrived />} />
+        <Route exact path="/approved" render={() => <Approved />} />
           <Route exact path="/checkin" render={(props) =>
             <CheckIn
             currentUser={this.state.currentUser}

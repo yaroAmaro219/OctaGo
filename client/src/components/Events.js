@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import octago from '../images/logo-white 2.png'
 import bmw from '../images/bmw-logo.svg'
+import gif from '../images/Video.png'
 import Nav from './Nav'
 
 export default class Events extends Component {
@@ -38,7 +39,7 @@ export default class Events extends Component {
       <div class="events-page">
         {/* <Nav /> */}
         <img src={octago} class='octago'/>
-        <img src={bmw} class='gif'/>
+        <img src={gif} class='gif'/>
         
         <div class="new-event">
           
